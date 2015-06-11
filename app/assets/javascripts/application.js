@@ -14,3 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+// add this for proper stylesheets after installing bootstrap, font awesome and simple form gems
+
+//= require jquery
+//= require jquery_ujs
+//= require bootstrap-sprockets
+//= require_tree .

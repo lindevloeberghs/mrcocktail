@@ -1,4 +1,24 @@
 source 'https://rubygems.org'
+ruby '2.2.2'
+# ALWAYS DO BUNDLE INSTALL AFTER CHANGING OR ADDING STH HERE
+
+# this ruby line 2 is not a gem but it has to know the version of ruby for which to install the gems because they are different
+# if you don't specify, it will take the version on your computer
+# BUT for heroku -> you need to specify which one so that it knows!
+# also the way how you share with your team which version of ruby an app is built in
+# so you kind of always want to add this line here -> just take the latest version on your computer unless other reason
+# ! always put this line on top (else it might take your computer version for all above the line and the version you specify on the line for what's below the line)
+# SO ALL THE BELOW GEMS WILL BE DOWNLOADED FOR THIS SPECIFIED VERSION OF RUBY !
+
+gem 'rails_12factor', group: :production
+gem 'puma',           group: :production
+# here specified that it will use puma for the production stage (this is where we did the curl thing to download a puma.rb file, see slides (?))
+# <> default we use webrick during development (local) stage
+
+# to start from a good CSS architecture: https://github.com/lewagon/rails-stylesheets
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+gem 'simple_form'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

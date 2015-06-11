@@ -1,0 +1,9 @@
+<h1>Doses#new</h1>
+<p>Add a dose for a selected cocktail</p>
+
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.error_notification %> <!-- errors of validation on model side! not frontend regex things -->
+  <%= f.input :description %>
+  <%= f.input :ingredient_id, collection: @ingredients_collection %>
+  <%= f.button :submit %>
+<% end %>

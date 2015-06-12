@@ -20,6 +20,9 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
 
+# this creates a commented config/application.yml file and adds it to your .gitignore. Add your own configuration to this file and you're done!
+# see http://karr.lewagon.org/lectures/rails/05-image-upload/#/1/13
+gem 'figaro'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'

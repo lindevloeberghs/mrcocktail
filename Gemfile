@@ -24,6 +24,11 @@ gem 'simple_form'
 # see http://karr.lewagon.org/lectures/rails/05-image-upload/#/1/13
 gem 'figaro'
 
+# paperclip: Easy file attachment management for ActiveRecord -- https://github.com/thoughtbot/paperclip
+gem 'aws-sdk', '< 2.0'
+gem 'paperclip'
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use postgresql as the database for Active Record
